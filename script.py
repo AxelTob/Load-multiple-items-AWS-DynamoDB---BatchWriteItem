@@ -23,7 +23,7 @@ def create_json(read_file, table_name):
             print(line_split)
             if line_split[0]:
                 data["email"] = {"S": line_split[0]}
-                data["password"] = {"S": line_split[1]}
+                data["name"] = {"S": line_split[1]}
                 listw.append({"PutRequest": {"Item": data}})
 
 
